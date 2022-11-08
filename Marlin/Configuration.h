@@ -1181,7 +1181,7 @@
  */
 // #define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25 }
 // #define DEFAULT_MAX_FEEDRATE          { 120, 120, 3, 25 }
-#define DEFAULT_MAX_FEEDRATE          { 150, 150, 5, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 150, 150, 5, 60 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -1503,7 +1503,7 @@
 // #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.5 // Z offset: -below +above  [the nozzle]
 // THESE ARE NOW CALLED NOZZLE_TO_PROBE_OFFSET
 
-#define NOZZLE_TO_PROBE_OFFSET { 10, 63, -0.5 }
+#define NOZZLE_TO_PROBE_OFFSET { 5, 55, -0.5 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
